@@ -1,0 +1,277 @@
+
+
+
+.banner {
+	margin-top: 160px;
+}
+
+
+// PAGES // --------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+// BLOG - NEWS PAGE - SINGLE POST // --------------------------------------------------
+
+.content-block.blog {
+	width: 100%;
+}
+.news-post {
+	padding: 0 0 20px 0;
+	margin: 0 0 60px 0;
+	border-bottom: 1px solid #eee;
+	.meta { margin: 0 0 20px 0; }
+}
+.news-post-img {
+	display: block;
+	width: 100%;
+	height: auto;
+	img { width: 100%; height: auto; }
+}
+h3.news-post-title {
+	padding: 10px 0;
+	margin-bottom: 0;
+	a { color: #222; }
+}
+
+a.read-more-wrap { display: block; width: 100%; }
+a.read-more { display: inline-block; }
+
+
+.sidebar-wrap {
+	position: absolute;
+	height: 100%;
+	right: 0;
+}
+.sidebar {
+	@include ease(.4s);
+	position: relative;
+	top: 0;
+	min-width: 200px;
+	&.sticky {
+		position: fixed;
+    top: 15%;
+	}
+	.search {
+		//display: none;
+	}
+	h3 {
+		margin-bottom: .5em;
+	}
+	ul { margin: 0; padding: 0; }
+	ul > li {
+		list-style-type: none;
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
+#recent-posts-2 {
+	margin-bottom: 30px;
+}
+.sidebar .search input {
+	height: 20px; 
+	line-height: 20px;
+	padding-right: 0;
+}
+.search:hover button { color: #222; }
+.search button {
+	-webkit-appearance:none;
+  background: transparent;
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 18px;
+  padding: 12px 0;
+  color: #ccc;
+}
+#tag_cloud-2 {
+	padding-bottom: 20px;
+}
+.sidebar-book {
+	width: 100%;
+	display: block;
+	padding: 10px 0;
+	margin-top: 10px;
+	border-top: 1px solid #eee;
+	.sidebar-btn {
+		display: inline-block;
+    font-size: 11px;
+    padding: 0 15px;
+    width: 120px;
+    height: 40px;
+    line-height: 36px;
+	}
+}
+
+
+
+.single h1 {
+	margin-bottom: 10px;
+}
+.single .meta {
+	margin-bottom: 10px;
+}
+
+
+
+.mailchimp.sidebar {
+	margin-top: 0px;
+	position: relative;
+	display: block;
+	input {
+		color: #222;
+    background-color: #eee;
+    border: 0;
+	}
+	input[type="submit"] {
+		@include ease(.2s);
+		font-family: 'gothammediumregular';
+		color: white;
+		background: #ddd;
+		position: relative;
+		top: -15px;
+		color: #222;
+		&:hover { background: $accent1; }
+	}
+}
+
+
+
+
+
+
+// HOMEPAGE // --------------------------------------------------
+
+.full-banner {
+	@include block;
+	width: 100%;
+	img {
+		width: 100%;
+		vertical-align: bottom;
+	}
+}
+
+.home-callouts {
+	text-align: center;
+	@include block;
+	margin: 20px 0 0;
+	h4 { color: #222; }
+	p { color: #222; }
+	.img-wrap {
+		display: block;
+		position: relative;
+		height: 160px;
+		width: 160px;
+		margin: 0 auto 20px;
+		@include border-radius(100px); 
+		overflow: hidden;
+	}
+}
+
+
+
+
+// TEAM // --------------------------------------------------
+
+.team h3 {
+	padding: 20px 0;
+	text-align: center;
+}
+.team-members {
+	text-align: center;
+	@include block;
+	margin: 20px 0 0;
+	.img-wrap {
+		display: block;
+		position: relative;
+		height: 200px;
+		width: 200px;
+		margin: 0 auto 20px;
+		@include border-radius(100px); 
+		overflow: hidden;
+	}
+	p { 
+		text-align: left; 
+		font-size: 14px;
+		margin-top: 20px;
+	}
+
+}
+
+
+
+
+
+// PRICING // --------------------------------------------------
+
+
+// used for lessons as well
+.pricing-info {
+	text-align: center;
+	@include block;
+	margin: 20px 0 0;
+	.img-wrap {
+		display: block;
+		position: relative;
+		height: 200px;
+		width: 200px;
+		margin: 0 auto 20px;
+		@include border-radius(100px); 
+		overflow: hidden;
+		&:hover .book-overlay { opacity: 1;
+    visibility: visible; }
+	}
+	.book-overlay {
+		font-family: 'gothammediumregular';
+		@include ease(.4s);
+		display: block;
+		position: absolute;
+		width: 96%;
+		height: 96%;
+		margin: 2%;
+		@include border-radius(100px); 
+		overflow: hidden;
+		background: rgba(black,.5);
+		line-height: 200px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+	}
+	h3 {
+		margin-bottom: 10px;
+	}
+	.price {
+		font-size: 18px;
+	}
+	span { color: #ccc; }
+	sup { font-size: 11px; margin-left: 1px; margin-top: 1px;}
+	.details {
+		color: #aaa;
+		font-family: 'gothammediumregular';
+		margin-bottom: 10px;
+		font-size: 14px;
+		ul { padding: 0; margin: 20px 0; }
+		li { list-style-type: none; line-height: 18px; }
+	}
+	.package {
+		min-width: 220px;
+		display: block;
+		margin-bottom: 40px;
+	}
+}
+
+
+
+
+
+

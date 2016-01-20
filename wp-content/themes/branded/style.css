@@ -1,0 +1,1511 @@
+/*
+Theme Name: Maxwells Branded Website
+Theme URI: http://maxwellcarlscott.com
+Author: Maxwell Carl Scott
+*/
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+/* line 17, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.1/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* entypo */
+/* line 5, sass/_partials/_typography.scss */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* fontawesome */
+/* line 11, sass/_partials/_typography.scss */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* zocial */
+/* line 17, sass/_partials/_typography.scss */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+@font-face {
+  font-family: 'gothamboldregular';
+  src: url("fonts/gothambold-webfont.eot");
+  src: url("fonts/gothambold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gothambold-webfont.woff2") format("woff2"), url("fonts/gothambold-webfont.woff") format("woff"), url("fonts/gothambold-webfont.ttf") format("truetype"), url("fonts/gothambold-webfont.svg#gothamboldregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gothambookregular';
+  src: url("fonts/gothambook-webfont.eot");
+  src: url("fonts/gothambook-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gothambook-webfont.woff2") format("woff2"), url("fonts/gothambook-webfont.woff") format("woff"), url("fonts/gothambook-webfont.ttf") format("truetype"), url("fonts/gothambook-webfont.svg#gothambookregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gothamlightregular';
+  src: url("fonts/gothamlight-webfont.eot");
+  src: url("fonts/gothamlight-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gothamlight-webfont.woff2") format("woff2"), url("fonts/gothamlight-webfont.woff") format("woff"), url("fonts/gothamlight-webfont.ttf") format("truetype"), url("fonts/gothamlight-webfont.svg#gothamlightregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gothammediumregular';
+  src: url("fonts/gothammedium-webfont.eot");
+  src: url("fonts/gothammedium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/gothammedium-webfont.woff2") format("woff2"), url("fonts/gothammedium-webfont.woff") format("woff"), url("fonts/gothammedium-webfont.ttf") format("truetype"), url("fonts/gothammedium-webfont.svg#gothammediumregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CubanoRegular';
+  src: url("fonts/cubano-regular-webfont.eot");
+  src: url("fonts/cubano-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cubano-regular-webfont.woff") format("woff"), url("fonts/cubano-regular-webfont.ttf") format("truetype"), url("fonts/cubano-regular-webfont.svg#CubanoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+/* global box-sizing */
+/* line 9, sass/_partials/_global.scss */
+*,
+*:after,
+*:before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* html element 62.5% font-size for REM use */
+/* line 17, sass/_partials/_global.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 20, sass/_partials/_global.scss */
+body {
+  font: 300 11px/1.4 'Domine', serif;
+  color: #444;
+}
+
+/* line 27, sass/_partials/_global.scss */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 32, sass/_partials/_global.scss */
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 40, sass/_partials/_global.scss */
+.cf {
+  *zoom: 1;
+}
+
+/* line 47, sass/_partials/_global.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 52, sass/_partials/_global.scss */
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+/* line 56, sass/_partials/_global.scss */
+a:hover {
+  color: #666666;
+  text-decoration: none;
+}
+
+/* line 60, sass/_partials/_global.scss */
+a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+/* line 65, sass/_partials/_global.scss */
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+/* line 69, sass/_partials/_global.scss */
+input:focus {
+  outline: 0;
+  border: 1px solid #04A4CC;
+}
+
+/* line 74, sass/_partials/_global.scss */
+strong, b {
+  font-family: 'gothammediumregular';
+}
+
+/* line 78, sass/_partials/_global.scss */
+p {
+  line-height: 26px;
+  font-size: 16px;
+}
+
+/* line 83, sass/_partials/_global.scss */
+em {
+  font-style: italic;
+}
+
+/* line 87, sass/_partials/_global.scss */
+h1 {
+  font-size: 3.2em;
+  margin-bottom: 1em;
+}
+
+/* line 88, sass/_partials/_global.scss */
+h2 {
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+/* line 89, sass/_partials/_global.scss */
+h3 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+/* line 90, sass/_partials/_global.scss */
+h4 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+/* line 91, sass/_partials/_global.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 96, sass/_partials/_global.scss */
+h6 {
+  font-size: 1em;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+/* wrapper */
+/* line 113, sass/_partials/_global.scss */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+/* line 130, sass/_partials/_global.scss */
+::selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none;
+}
+
+/* line 135, sass/_partials/_global.scss */
+::-webkit-selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none;
+}
+
+/* line 140, sass/_partials/_global.scss */
+::-moz-selection {
+  background: #04A4CC;
+  color: #FFF;
+  text-shadow: none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+/* line 150, sass/_partials/_global.scss */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 154, sass/_partials/_global.scss */
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+/* line 158, sass/_partials/_global.scss */
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+/* line 162, sass/_partials/_global.scss */
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+/* line 166, sass/_partials/_global.scss */
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+/* line 170, sass/_partials/_global.scss */
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 173, sass/_partials/_global.scss */
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+/* line 177, sass/_partials/_global.scss */
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 182, sass/_partials/_global.scss */
+.wp-caption {
+  background: #FFF;
+  border: 1px solid #F0F0F0;
+  max-width: 96%;
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+
+/* line 189, sass/_partials/_global.scss */
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 192, sass/_partials/_global.scss */
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+
+/* line 195, sass/_partials/_global.scss */
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+
+/* line 198, sass/_partials/_global.scss */
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+
+/* line 207, sass/_partials/_global.scss */
+.wp-caption .wp-caption-text,
+.gallery-caption {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+@media print {
+  /* line 225, sass/_partials/_global.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 232, sass/_partials/_global.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 235, sass/_partials/_global.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 238, sass/_partials/_global.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 243, sass/_partials/_global.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 246, sass/_partials/_global.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 250, sass/_partials/_global.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 253, sass/_partials/_global.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 256, sass/_partials/_global.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 264, sass/_partials/_global.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 269, sass/_partials/_global.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 6, sass/_layouts/_header.scss */
+.main-header {
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  display: block;
+  position: fixed;
+  width: 100%;
+  background: white;
+  height: 160px;
+  z-index: 999;
+  top: 0;
+  text-align: center;
+}
+
+/* line 18, sass/_layouts/_header.scss */
+body.scrolled .main-header {
+  height: 60px;
+  border-bottom: 1px solid rgba(136, 208, 200, 0.2);
+}
+/* line 21, sass/_layouts/_header.scss */
+body.scrolled .main-header .cube {
+  top: 40px !important;
+  left: 40px !important;
+}
+
+/* line 29, sass/_layouts/_header.scss */
+.cube {
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 3s infinite ease-out;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: -40px;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+/* line 45, sass/_layouts/_header.scss */
+.cube div {
+  width: 40px;
+  height: 40px;
+  line-height: 100px;
+  text-align: center;
+  box-shadow: inset 0px 0px 0px 1px rgba(10, 0, 0, 0.8);
+  display: block;
+  position: absolute;
+}
+
+/* line 55, sass/_layouts/_header.scss */
+.cube div.top {
+  -webkit-transform: rotateX(90deg);
+  margin-top: -20px;
+}
+
+/* line 60, sass/_layouts/_header.scss */
+.cube div.right {
+  -webkit-transform: rotateY(90deg);
+  margin-left: 20px;
+}
+
+/* line 65, sass/_layouts/_header.scss */
+.cube div.bottom {
+  -webkit-transform: rotateX(-90deg);
+  margin-top: 20px;
+}
+
+/* line 70, sass/_layouts/_header.scss */
+.cube div.left {
+  -webkit-transform: rotateY(-90deg);
+  margin-left: -20px;
+}
+
+/* line 75, sass/_layouts/_header.scss */
+.cube div.front {
+  -webkit-transform: translateZ(20px);
+}
+
+/* line 79, sass/_layouts/_header.scss */
+.cube div.back {
+  -webkit-transform: translateZ(-20px) rotateX(180deg);
+}
+
+@-webkit-keyframes spin {
+  /* line 84, sass/_layouts/_header.scss */
+  0% {
+    -webkit-transform: rotateX(-20deg) rotateY(20deg);
+  }
+
+  /* line 85, sass/_layouts/_header.scss */
+  100% {
+    -webkit-transform: rotateX(-20deg) rotateY(740deg);
+  }
+}
+
+/* line 89, sass/_layouts/_header.scss */
+.primary-nav {
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #efefef;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+@media (max-width: 767px) {
+  /* line 89, sass/_layouts/_header.scss */
+  .primary-nav {
+    display: none;
+  }
+}
+/* line 99, sass/_layouts/_header.scss */
+.primary-nav .nav-wrap {
+  text-align: center;
+}
+/* line 102, sass/_layouts/_header.scss */
+.primary-nav ul {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 107, sass/_layouts/_header.scss */
+.primary-nav ul > li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 15px;
+  line-height: 60px;
+  height: 60px;
+}
+/* line 115, sass/_layouts/_header.scss */
+.primary-nav ul > li.current-menu-item a {
+  color: #88d0c8;
+}
+/* line 118, sass/_layouts/_header.scss */
+.primary-nav ul > li ul.sub-menu {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  width: 280px;
+  background: white;
+  left: -20px;
+  margin-top: -1px;
+  max-height: 0;
+  overflow: hidden;
+  z-index: 9;
+}
+/* line 128, sass/_layouts/_header.scss */
+.primary-nav ul > li ul.sub-menu li {
+  display: block;
+  text-align: left;
+  line-height: 40px;
+  height: 40px;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  border-top: 1px solid rgba(34, 34, 34, 0.1);
+}
+/* line 137, sass/_layouts/_header.scss */
+.primary-nav ul > li ul.sub-menu li a {
+  font-family: monospace;
+  color: black;
+  text-align: left;
+}
+/* line 143, sass/_layouts/_header.scss */
+.primary-nav ul > li ul.sub-menu li:hover a {
+  color: #88d0c8;
+}
+/* line 148, sass/_layouts/_header.scss */
+.primary-nav ul > li:hover a {
+  color: #88d0c8;
+}
+/* line 150, sass/_layouts/_header.scss */
+.primary-nav ul > li:hover ul.sub-menu {
+  max-height: 400px;
+}
+/* line 153, sass/_layouts/_header.scss */
+.primary-nav ul > li a {
+  font-family: monospace;
+  color: black;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+/* line 164, sass/_layouts/_header.scss */
+.primary-nav .booking-btn {
+  margin: 12px 0;
+}
+
+/* line 171, sass/_layouts/_header.scss */
+.header-social {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+/* line 176, sass/_layouts/_header.scss */
+.header-social li {
+  display: inline-block;
+  margin-left: 5px;
+}
+/* line 177, sass/_layouts/_header.scss */
+.header-social li a {
+  font-size: 16px;
+  color: #ccc;
+}
+/* line 178, sass/_layouts/_header.scss */
+.header-social li:hover a {
+  color: #88d0c8;
+}
+
+/* line 181, sass/_layouts/_header.scss */
+body.scrolled .header-social {
+  top: -40px;
+}
+
+/* line 189, sass/_layouts/_header.scss */
+a.nav-open {
+  display: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-family: 'gothammediumregular';
+  width: 100%;
+  background-color: #eee;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  background: #88d0c8;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -1px;
+}
+@media (max-width: 767px) {
+  /* line 189, sass/_layouts/_header.scss */
+  a.nav-open {
+    display: block;
+  }
+}
+/* line 206, sass/_layouts/_header.scss */
+a.nav-open span {
+  margin-left: 10px;
+}
+
+/* line 209, sass/_layouts/_header.scss */
+.mobile-menu {
+  display: none;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+  padding: 40px 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 767px) {
+  /* line 209, sass/_layouts/_header.scss */
+  .mobile-menu {
+    display: block;
+  }
+}
+/* line 222, sass/_layouts/_header.scss */
+.mobile-menu a.nav-close {
+  position: absolute;
+  padding: 20px;
+  font-size: 18px;
+  right: 0;
+  top: 0;
+}
+/* line 228, sass/_layouts/_header.scss */
+.mobile-menu ul {
+  padding: 0;
+}
+/* line 231, sass/_layouts/_header.scss */
+.mobile-menu li {
+  font-family: 'gothammediumregular';
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+/* line 236, sass/_layouts/_header.scss */
+.mobile-menu li ul.sub-menu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 237, sass/_layouts/_header.scss */
+.mobile-menu li ul.sub-menu li a {
+  color: #88d0c8;
+}
+/* line 239, sass/_layouts/_header.scss */
+.mobile-menu.active {
+  top: 0;
+}
+
+/* line 254, sass/_layouts/_header.scss */
+.greenland-video {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 260, sass/_layouts/_header.scss */
+.greenland-video video#greenland {
+  width: 100%;
+}
+/* line 263, sass/_layouts/_header.scss */
+.greenland-video video#ambiance {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  position: fixed;
+}
+/* line 270, sass/_layouts/_header.scss */
+.greenland-video .video-callout {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  line-height: 100%;
+  font-size: 1.5em;
+  font-weight: 100;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  opacity: 0;
+}
+/* line 272, sass/_layouts/_header.scss */
+.greenland-video .video-callout h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* line 286, sass/_layouts/_header.scss */
+body.ready .greenland-video .video-callout {
+  top: 50%;
+  opacity: 1;
+}
+
+/* line 293, sass/_layouts/_header.scss */
+.banner {
+  display: block;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 299, sass/_layouts/_header.scss */
+.page .banner, .search .banner {
+  height: 300px;
+}
+
+/* line 302, sass/_layouts/_header.scss */
+.contact .banner {
+  height: 500px;
+}
+
+/* line 308, sass/_layouts/_header.scss */
+.banner.blog {
+  height: 200px;
+}
+/* line 310, sass/_layouts/_header.scss */
+.banner.blog h1.page-title {
+  bottom: 30px;
+  padding: 0 15px;
+}
+
+/* line 316, sass/_layouts/_header.scss */
+h1.page-title {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  display: block;
+  z-index: 99;
+}
+
+/* line 4, sass/_layouts/_page.scss */
+.banner {
+  margin-top: 160px;
+}
+
+/* line 23, sass/_layouts/_page.scss */
+.content-block.blog {
+  width: 100%;
+}
+
+/* line 26, sass/_layouts/_page.scss */
+.news-post {
+  padding: 0 0 20px 0;
+  margin: 0 0 60px 0;
+  border-bottom: 1px solid #eee;
+}
+/* line 30, sass/_layouts/_page.scss */
+.news-post .meta {
+  margin: 0 0 20px 0;
+}
+
+/* line 32, sass/_layouts/_page.scss */
+.news-post-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* line 36, sass/_layouts/_page.scss */
+.news-post-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 38, sass/_layouts/_page.scss */
+h3.news-post-title {
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+/* line 41, sass/_layouts/_page.scss */
+h3.news-post-title a {
+  color: #222;
+}
+
+/* line 44, sass/_layouts/_page.scss */
+a.read-more-wrap {
+  display: block;
+  width: 100%;
+}
+
+/* line 45, sass/_layouts/_page.scss */
+a.read-more {
+  display: inline-block;
+}
+
+/* line 48, sass/_layouts/_page.scss */
+.sidebar-wrap {
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+
+/* line 53, sass/_layouts/_page.scss */
+.sidebar {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  top: 0;
+  min-width: 200px;
+}
+/* line 58, sass/_layouts/_page.scss */
+.sidebar.sticky {
+  position: fixed;
+  top: 15%;
+}
+/* line 65, sass/_layouts/_page.scss */
+.sidebar h3 {
+  margin-bottom: .5em;
+}
+/* line 68, sass/_layouts/_page.scss */
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 69, sass/_layouts/_page.scss */
+.sidebar ul > li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* line 75, sass/_layouts/_page.scss */
+#recent-posts-2 {
+  margin-bottom: 30px;
+}
+
+/* line 78, sass/_layouts/_page.scss */
+.sidebar .search input {
+  height: 20px;
+  line-height: 20px;
+  padding-right: 0;
+}
+
+/* line 83, sass/_layouts/_page.scss */
+.search:hover button {
+  color: #222;
+}
+
+/* line 84, sass/_layouts/_page.scss */
+.search button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 18px;
+  padding: 12px 0;
+  color: #ccc;
+}
+
+/* line 95, sass/_layouts/_page.scss */
+#tag_cloud-2 {
+  padding-bottom: 20px;
+}
+
+/* line 98, sass/_layouts/_page.scss */
+.sidebar-book {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+}
+/* line 104, sass/_layouts/_page.scss */
+.sidebar-book .sidebar-btn {
+  display: inline-block;
+  font-size: 11px;
+  padding: 0 15px;
+  width: 120px;
+  height: 40px;
+  line-height: 36px;
+}
+
+/* line 116, sass/_layouts/_page.scss */
+.single h1 {
+  margin-bottom: 10px;
+}
+
+/* line 119, sass/_layouts/_page.scss */
+.single .meta {
+  margin-bottom: 10px;
+}
+
+/* line 125, sass/_layouts/_page.scss */
+.mailchimp.sidebar {
+  margin-top: 0px;
+  position: relative;
+  display: block;
+}
+/* line 129, sass/_layouts/_page.scss */
+.mailchimp.sidebar input {
+  color: #222;
+  background-color: #eee;
+  border: 0;
+}
+/* line 134, sass/_layouts/_page.scss */
+.mailchimp.sidebar input[type="submit"] {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: 'gothammediumregular';
+  color: white;
+  background: #ddd;
+  position: relative;
+  top: -15px;
+  color: #222;
+}
+/* line 142, sass/_layouts/_page.scss */
+.mailchimp.sidebar input[type="submit"]:hover {
+  background: #88d0c8;
+}
+
+/* line 153, sass/_layouts/_page.scss */
+.full-banner {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+/* line 156, sass/_layouts/_page.scss */
+.full-banner img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/* line 162, sass/_layouts/_page.scss */
+.home-callouts {
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 20px 0 0;
+}
+/* line 166, sass/_layouts/_page.scss */
+.home-callouts h4 {
+  color: #222;
+}
+/* line 167, sass/_layouts/_page.scss */
+.home-callouts p {
+  color: #222;
+}
+/* line 168, sass/_layouts/_page.scss */
+.home-callouts .img-wrap {
+  display: block;
+  position: relative;
+  height: 160px;
+  width: 160px;
+  margin: 0 auto 20px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+/* line 184, sass/_layouts/_page.scss */
+.team h3 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* line 188, sass/_layouts/_page.scss */
+.team-members {
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 20px 0 0;
+}
+/* line 192, sass/_layouts/_page.scss */
+.team-members .img-wrap {
+  display: block;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto 20px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+/* line 201, sass/_layouts/_page.scss */
+.team-members p {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* line 217, sass/_layouts/_page.scss */
+.pricing-info {
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 20px 0 0;
+}
+/* line 221, sass/_layouts/_page.scss */
+.pricing-info .img-wrap {
+  display: block;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto 20px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+/* line 229, sass/_layouts/_page.scss */
+.pricing-info .img-wrap:hover .book-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+/* line 232, sass/_layouts/_page.scss */
+.pricing-info .book-overlay {
+  font-family: 'gothammediumregular';
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  display: block;
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  margin: 2%;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 200px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+}
+/* line 250, sass/_layouts/_page.scss */
+.pricing-info h3 {
+  margin-bottom: 10px;
+}
+/* line 253, sass/_layouts/_page.scss */
+.pricing-info .price {
+  font-size: 18px;
+}
+/* line 256, sass/_layouts/_page.scss */
+.pricing-info span {
+  color: #ccc;
+}
+/* line 257, sass/_layouts/_page.scss */
+.pricing-info sup {
+  font-size: 11px;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+/* line 258, sass/_layouts/_page.scss */
+.pricing-info .details {
+  color: #aaa;
+  font-family: 'gothammediumregular';
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+/* line 263, sass/_layouts/_page.scss */
+.pricing-info .details ul {
+  padding: 0;
+  margin: 20px 0;
+}
+/* line 264, sass/_layouts/_page.scss */
+.pricing-info .details li {
+  list-style-type: none;
+  line-height: 18px;
+}
+/* line 266, sass/_layouts/_page.scss */
+.pricing-info .package {
+  min-width: 220px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+/* line 7, sass/_layouts/_footer.scss */
+.sub-footer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 11, sass/_layouts/_footer.scss */
+.sub-footer .left, .sub-footer .right {
+  position: relative;
+  padding: 0;
+}
+/* line 12, sass/_layouts/_footer.scss */
+.sub-footer img {
+  vertical-align: bottom;
+}
+
+/* line 14, sass/_layouts/_footer.scss */
+.footer-book {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  color: white;
+  top: 35%;
+}
+
+/* line 21, sass/_layouts/_footer.scss */
+.callout-book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  margin-left: -80px;
+  margin-top: 0px;
+  border: 3px solid white;
+}
+/* line 29, sass/_layouts/_footer.scss */
+.callout-book:hover {
+  border: 3px solid white;
+  color: white;
+  opacity: .5;
+}
+
+/* line 38, sass/_layouts/_footer.scss */
+.main-footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #333;
+  padding: 4em 0 4em;
+  text-align: left;
+  color: white;
+}
+/* line 45, sass/_layouts/_footer.scss */
+.main-footer p {
+  font-size: 12px;
+  line-height: 18px;
+}
+/* line 46, sass/_layouts/_footer.scss */
+.main-footer a {
+  color: white;
+}
+/* line 46, sass/_layouts/_footer.scss */
+.main-footer a:hover {
+  color: #88d0c8;
+}
+/* line 47, sass/_layouts/_footer.scss */
+.main-footer .footer-logo {
+  text-align: center;
+  float: left;
+}
+/* line 49, sass/_layouts/_footer.scss */
+.main-footer .footer-logo img {
+  width: 160px;
+}
+/* line 52, sass/_layouts/_footer.scss */
+.main-footer h4.tag {
+  opacity: .8;
+  color: #88d0c8;
+  margin-top: -20px;
+  letter-spacing: 2px;
+}
+/* line 58, sass/_layouts/_footer.scss */
+.main-footer p.tag {
+  position: relative;
+  font-size: 10px;
+  font-style: italic;
+  opacity: .5;
+}
+
+/* line 65, sass/_layouts/_footer.scss */
+.copyright {
+  position: relative;
+  display: block;
+  background: #222;
+  color: #666;
+  padding: 10px 0;
+  font-size: 10px;
+  text-align: center;
+}
+/* line 72, sass/_layouts/_footer.scss */
+.copyright a {
+  color: #888;
+}
+
+/* line 76, sass/_layouts/_footer.scss */
+.site-map {
+  text-align: left;
+}
+/* line 78, sass/_layouts/_footer.scss */
+.site-map li {
+  display: inline-block;
+  width: 49%;
+  line-height: 18px;
+  height: 18px;
+  vertical-align: top;
+}
+/* line 84, sass/_layouts/_footer.scss */
+.site-map li .sub-menu li a {
+  font-size: 10px;
+}
+/* line 87, sass/_layouts/_footer.scss */
+.site-map li a {
+  display: block;
+}
+/* line 89, sass/_layouts/_footer.scss */
+.site-map li > ul > li {
+  width: 100%;
+  vertical-align: top;
+}
+/* line 90, sass/_layouts/_footer.scss */
+.site-map ul.children {
+  margin-top: 20px;
+}
+
+/* line 94, sass/_layouts/_footer.scss */
+.footer-social {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* line 110, sass/_layouts/_footer.scss */
+.mailchimp {
+  margin-top: 20px;
+}
+/* line 112, sass/_layouts/_footer.scss */
+.mailchimp input {
+  color: white;
+  background-color: #222;
+  border: 0;
+}
+/* line 117, sass/_layouts/_footer.scss */
+.mailchimp input[type="submit"] {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-family: 'gothammediumregular';
+  color: white;
+  background: #111;
+  position: relative;
+  top: -15px;
+}
+/* line 124, sass/_layouts/_footer.scss */
+.mailchimp input[type="submit"]:hover {
+  background: #88d0c8;
+}
+
+/* line 132, sass/_layouts/_footer.scss */
+.mail-modal {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: auto;
+  background: #222;
+  color: white;
+  padding: 40px 60px;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 60px;
+}
+/* line 147, sass/_layouts/_footer.scss */
+.mail-modal .mail-logo {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+/* line 148, sass/_layouts/_footer.scss */
+.mail-modal h4 {
+  text-align: center;
+  color: #888;
+  margin-bottom: 5px;
+  letter-spacing: 2px;
+}
+/* line 149, sass/_layouts/_footer.scss */
+.mail-modal p {
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+/* line 150, sass/_layouts/_footer.scss */
+.mail-modal label {
+  font-family: 'gothammediumregular';
+  padding-bottom: 3px;
+}
+/* line 151, sass/_layouts/_footer.scss */
+.mail-modal input {
+  border: 0;
+  color: #222;
+}
+/* line 154, sass/_layouts/_footer.scss */
+.mail-modal input:focus {
+  border: 1px solid #88d0c8;
+}
+/* line 156, sass/_layouts/_footer.scss */
+.mail-modal input[type="submit"] {
+  display: block;
+  font-size: 12px;
+  font-family: 'gothammediumregular';
+  text-transform: uppercase;
+  background: #88d0c8;
+  color: white;
+  max-width: 120px;
+  margin: 0 auto;
+}
+/* line 166, sass/_layouts/_footer.scss */
+.mail-modal.active {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+}
+
+/* line 173, sass/_layouts/_footer.scss */
+.mail-modal-overlay {
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(136, 208, 200, 0.8);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9991;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 182, sass/_layouts/_footer.scss */
+.mail-modal-overlay:hover {
+  cursor: pointer;
+}
+/* line 183, sass/_layouts/_footer.scss */
+.mail-modal-overlay.active {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 192, sass/_layouts/_footer.scss */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 9999;
+}
