@@ -2,33 +2,26 @@
 /* template name: Contact */
 get_header(); ?>
 
-	<section class="content-block margin">
 
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+<div class="parallax-window contact-parallax" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/img/contactbg.jpg">
+	<h1 class="page-title">Contact Us</h1>
+</div>
 
-			<?php the_content(); ?>
+<section class="contact-content" style="clear:both;">
 
-		<?php endwhile; ?>
+	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-		<?php else: ?>
-			nothing
-		<?php endif; ?>
+		<div class="post-content col-md-6 col-md-offset-3">
+			<h1 style="font-family: 'Futura Std'; font-weight: 100;">Contact Us</h1>
+			<div class="contact-form"><?php the_content(); ?></div>
+		</div>
+		<div style="clear:both;"></div>
 
-	</section>
-
-	<?php if( get_field('contentbanner') ): ?>
-	<div class="full-banner">
-		<img src="<?php the_field('contentbanner'); ?>">
-		<div class="watermark mail-modal-btn"><img src="<?php echo get_template_directory_uri(); ?>/img/wavebranding-white.png"/></div>
-	</div>
+	<?php endwhile; ?>
+	<?php else: ?>
 	<?php endif; ?>
 
-	<?php if( get_field('page_content_below') ): ?>
-	<section class="content-block">
-		<?php the_field('page_content_below'); ?>
-	</section>
-	<?php endif; ?>
-
+</section>
 
 
 <?php get_footer(); ?>

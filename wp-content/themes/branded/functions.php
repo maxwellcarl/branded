@@ -438,6 +438,75 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 
 
 
+
+add_action('init', 'projects_init');
+function projects_init() {
+    $labels = array(
+        'name' => _x('projects', 'post type general name'),
+        'singular_name' => _x('projects', 'post type singular name'),
+        'add_new' => _x('Add New', 'post'),
+        'add_new_item' => __('Add New post'),
+        'edit_item' => __('Edit post'),
+        'new_item' => __('New post'),
+        'view_item' => __('View post'),
+        'search_items' => __('Search posts'),
+        'not_found' => __('No posts found'),
+        'not_found_in_trash' => __('No posts found in Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Projects'
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => null,
+        'supports' => array('title', 'editor', 'thumbnail','excerpt')
+    );
+    register_post_type('projects', $args);
+}
+
+add_action('init', 'team_init');
+function team_init() {
+    $labels = array(
+        'name' => _x('team', 'post type general name'),
+        'singular_name' => _x('team', 'post type singular name'),
+        'add_new' => _x('Add New', 'post'),
+        'add_new_item' => __('Add New post'),
+        'edit_item' => __('Edit post'),
+        'new_item' => __('New post'),
+        'view_item' => __('View post'),
+        'search_items' => __('Search posts'),
+        'not_found' => __('No posts found'),
+        'not_found_in_trash' => __('No posts found in Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Team'
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => null,
+        'supports' => array('title', 'editor', 'thumbnail','excerpt')
+    );
+    register_post_type('team', $args);
+}
+
+
+
 add_action('init', 'footerposts_init');
 function footerposts_init() {
     $labels = array(

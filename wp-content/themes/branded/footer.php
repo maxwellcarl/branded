@@ -2,102 +2,38 @@
 </div><!-- /wrapper -->
 
 
-
 <footer class="main-footer" role="contentinfo">
 
 	<section class="container cf">
 
-		<div class="footer-logo col-xs-12 col-sm-3">
-			<h2>logo here</h2>
-			<h4 class="tag">NYC - LAX - PDX</h4>
-			<p class="tag">"Web-Design Web-Development Experts"</p>
+		<div class="col-md-12 footer-top">
+			<h6 style="letter-spacing: 4px; opacity: .4; margin-top: 20px; margin-bottom:0;">the Digital Sauna</h6>
+			<p style="font-size: 9px; opacity: .4; letter-spacing: 1px;"><em>- Your Creative Hotbox -</em></p>
+
+			<!--<div class="smokes">
+				<div class="smoke smoke1"></div>
+			</div>-->
+			<a href="/" class="footer-branding"><div class="cube cube-footer">
+			  <div class="top"></div>
+			  <div class="right"></div>
+			  <div class="bottom"></div>
+			  <div class="left"></div>
+			  <div class="front"></div>
+			  <div class="back"></div>
+			</div></a>
+
+
+			<h6 style="letter-spacing: 4px; margin-top: 20px;">New York <span>|</span>  Los Angeles  <span>|</span>  Portland</h6>
+			<h6 style="letter-spacing: 4px; opacity: .2; margin-top: 20px;">Referrals Welcome</h6>
 		</div>
-		
-		<div class="col-sm-3">
-			<h4>Social</h4>
-			<?php if( have_rows('footer_social') ): ?>
-				<ul class="footer-social">
-					<?php while( have_rows('footer_social') ): the_row(); 
-						$facebook = get_sub_field('facebook');
-						$twitter = get_sub_field('twitter');
-						$insta = get_sub_field('insta');
-						$youtube = get_sub_field('youtube');
-						?>
-						<li class="fb">
-							<?php if( $facebook ): ?>
-								<a href="<?php echo $facebook; ?>"><span class="entypo-facebook-circled"></span></a>
-							<?php endif; ?>
-						</li>
-						<li class="tw">
-							<?php if( $twitter ): ?>
-								<a href="<?php echo $twitter; ?>"><span class="entypo-twitter-circled"></span></a>
-							<?php endif; ?>
-						</li>
-						<li class="insta">
-							<?php if( $twitter ): ?>
-								<a href="<?php echo $insta; ?>"><span class="entypo-instagrem"></span></a>
-							<?php endif; ?>
-						</li>
-						<li class="you">
-							<?php if( $twitter ): ?>
-								<a href="<?php echo $youtube; ?>"><span class="zocial-youtube"></span></a>
-							<?php endif; ?>
-						</li>
-						<li class="email-list">
-							<a class="mail-modal-btn" href="#"><span class="entypo-paper-plane"></span></a>
-						</li>
 
+		<div class="footer-bottom">
 
-					<?php endwhile; ?>
-					</ul>
-			<?php endif; ?>
-
-			<h4>Contact</h4>
-			<?php if( get_field('footer_contact') ): ?>
-				<?php the_field('footer_contact'); ?>
-			<?php endif; ?>
-			<div class="mailchimp">
-				<!-- Begin MailChimp Signup Form -->
-				<div id="mc_embed_signup">
-				<form action="//swim-city.us11.list-manage.com/subscribe/post?u=3b66191a700b033d3c5226f84&amp;id=848a6b7e86" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				    <div id="mc_embed_signup_scroll">
-					
-				<div class="mc-field-group">
-					<h4>Newsletter Signup</h4>
-					<input type="email" placeholder="Enter Email Address" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-				</div>
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_3b66191a700b033d3c5226f84_848a6b7e86" tabindex="-1" value=""></div>
-				    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-				   	</div>
-				</form>
-				</div>
-
-				<!--End mc_embed_signup-->
+			<div class="col-md-6 col-md-offset-3 cf">
+				<h6 style="letter-spacing: 4px; font-style:italic; text-transform:none; font-weight: 100;"><a href="#" style="opacity: 1;">info@digitalsauna.com</a></h6>
 			</div>
 
-		</div>
-		<div class="col-sm-6 site-map">
-			<h4>Site Map</h4>
-			<?php
-			  $args = array(
-			  'orderby' => 'post_title',
-			  'order' => 'ASC',
-				'post_type' => 'page',
-				'showposts' => 1000,
-				'caller_get_posts' => 1
-			  ); 
-			$pages = get_posts($args);
-			      foreach($pages as $page) {
-			          $out .= '<li>';
-			          $out .=  '<a href="'.get_permalink($page->ID).'" title="'.wptexturize($page->post_title).'">'.wptexturize($page->post_title).'</a></li>';
-			      }
-			    $out = '<ul class="page_post">' . $out . '</ul>';
-			    echo $out;
-			?>
+
 		</div>
 
 
@@ -108,50 +44,12 @@
 
 <!-- copyright -->
 <p class="copyright">
-	&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?> and <a href="http://maxwellcarlscott.com">maxwellcarlscott.com</a>
+	&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?> and <a href="http://maxwellcarlscott.com">Maxwellcarlscott.com</a>
 </p>
 
 
 
-<!-- Begin MailChimp Signup Form -->
-<div class="mail-modal">
-	<div id="mc_embed_signup">
-	<form action="//swim-city.us11.list-manage.com/subscribe/post?u=3b66191a700b033d3c5226f84&amp;id=848a6b7e86" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	    <div id="mc_embed_signup_scroll">
-	    <a href="<?php echo home_url(); ?>">
-			<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-			<img class="mail-logo" src="<?php echo get_template_directory_uri(); ?>/img/swimcitylogowhit.svg" alt="Logo" class="logo-img">
-		</a>
-		<h4>DIVE IN!</h4><p>Stay in the know about SwimCity news and swim inspiration!</p>
-	<div class="mc-field-group">
-		<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-	</label>
-		<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-	</div>
-	<div class="mc-field-group">
-		<label for="mce-FNAME">First Name </label>
-		<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-	</div>
-	<div class="mc-field-group">
-		<label for="mce-LNAME">Last Name </label>
-		<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-	</div>
-	<div class="mc-field-group">
-		<label for="mce-MMERGE3">Zip Code </label>
-		<input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
-	</div>
-		<div id="mce-responses" class="clear">
-			<div class="response" id="mce-error-response" style="display:none"></div>
-			<div class="response" id="mce-success-response" style="display:none"></div>
-		</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-	    <div style="position: absolute; left: -5000px;"><input type="text" name="b_3b66191a700b033d3c5226f84_848a6b7e86" tabindex="-1" value=""></div>
-	    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-	    </div>
-	</form>
-	</div>
-	<!--End mc_embed_signup-->
-</div>
-<div class="mail-modal-overlay"></div>
+<a class="to-top" href="#top"></a>
 
 
 
@@ -159,8 +57,19 @@
 <div class="overlay"></div>
 
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</div><!-- close site wrappper -->
+
+<script src="<?php echo get_template_directory_uri(); ?>/js/lib/jquery-1.11.2.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/lib/bootstrap.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/lib/parallax.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/lib/jquery.waypoints.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/lib/shortcuts/inview.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/lib/date.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/lib/jquery.appear.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/lib/typed.js"></script>
 <?php wp_footer(); ?>
+
 
 
 <!-- analytics -->

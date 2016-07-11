@@ -11,15 +11,12 @@
   @else if $class == sm {
     @media (min-width: 768px) { @content; }
   }
- 
   @else if $class == md {
     @media (min-width: 992px) { @content; }
   }
- 
   @else if $class == lg {
     @media (min-width: 1200px) { @content; }
   }
- 
   @else {
     @warn "Breakpoint mixin supports: xs, xm, sm, md, lg";
   }
@@ -70,6 +67,7 @@
 }
 
 
+// blur in
 @mixin blur {
   -webkit-filter: blur(2px);
   filter: blur(2px);
@@ -78,3 +76,17 @@
   -webkit-filter: blur(0px);
   filter: blur(0px);
 }
+
+//slide up
+@mixin slide {
+  position: relative;
+  top: 40px;
+}
+@mixin slide-up {
+  position: relative;
+  top: 0;
+}
+
+
+
+

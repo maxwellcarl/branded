@@ -18,8 +18,15 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:300 11px/1.4 'Domine', serif;
-	color:#444;
+	font:300 11px/1.4 serif;
+	font-family: 'Futura Std';
+	color: black;
+	@include ease(.4s);
+	position: relative;
+	overflow-x: hidden;
+}
+body.menu-pullout-active {
+	//overflow-y: hidden;
 }
 
 
@@ -72,7 +79,8 @@ input:focus {
 }
 
 strong, b {
-	font-family: 'gothammediumregular';
+	font-family: 'ChaletBookBold', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 600;
 }
 
 p {
@@ -84,16 +92,22 @@ em {
 	font-style: italic;
 }
 
-h1 { font-size: 3.2em; margin-bottom: 1em; }
-h2 { font-size: 3em; margin-bottom: 1em; }
-h3 { font-size: 2em; margin-bottom: 1em; }
+h1 { font-size: 3.2em; margin-bottom: 1em; font-weight: 700; font-family: 'ChaletBookBold'; text-transform: uppercase; }
+h2 { font-size: 3em; margin-bottom: 1em; font-weight: 400; }
+h3 { font-size: 2em; margin-bottom: 1em; font-weight: 400; }
 h4 { font-size: 1.2em; margin-bottom: 1em; font-weight: 600; }
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Montserrat', sans-serif;
+h2, h3, h4, h5, h6 {
+	font-family: 'ChaletBook', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	text-transform: uppercase;
 	//text-align: center;
 }
-h6 { font-size: 1em; margin-bottom: 1em; font-weight: 600; }
+h6 { font-size: 1em; margin-bottom: 1em; font-weight: 600; letter-spacing: 4px; }
+
+
+h1.page-title {
+	font-weight: 100;
+	font-family: 'Futura Std';
+}
 
 
 
@@ -101,13 +115,28 @@ h6 { font-size: 1em; margin-bottom: 1em; font-weight: 600; }
     STRUCTURE
 \*------------------------------------*/
 
-/* wrapper */
-// .wrapper {
-// 	max-width:1280px;
-// 	width:95%;
-// 	margin:0 auto;
-// 	position:relative;
-// }
+
+// site wrapper
+#wrapper {
+	@include ease(.4s);
+	position: relative;
+	width: 100%;
+	display: block;
+	left: 0;
+	overflow-x: hidden;
+}
+body.menu-pullout-active #wrapper {
+	left: 400px;
+	@include breakpoint(xm) {
+		left: 100vw;
+	}
+}
+
+
+.ready2 {
+	display: block;
+}
+
 
 
 .container {
@@ -117,7 +146,357 @@ h6 { font-size: 1em; margin-bottom: 1em; font-weight: 600; }
 }
 
 
+.waypoint.up {
+	@include ease(.2s);
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+	top: 20px;
+	&.visible {
+		opacity: 1;
+		visibility: visible;
+		top: 0;
+	}
+}
 
+
+
+
+.parallax-window {
+	min-height: 600px;
+	background: transparent;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+
+a.to-top {
+	@include ease(.6s);
+	background: url(img/up1.png) no-repeat 0 0;
+	background-size: 50%;
+	position: fixed;
+	bottom: 200px;
+	right: 0;
+	width: 40px; height: 40px;
+	color: black;
+	z-index: 999;
+	opacity: 0;
+	visibility: hidden;
+	&:hover {cursor: pointer; }
+}
+body.scrolled a.to-top {
+	opacity: 1;
+	visibility: visible;
+	&:hover {cursor: pointer; opacity: .4; }
+}
+
+
+
+// blur in
+.blur {
+	@include ease(.2s);
+	@include blur;
+}
+.blur-in {
+	@include ease(.2s);
+	@include blur-in;
+}
+.slide {
+	@include ease(.2s);
+	@include slide;
+}
+.slide-up {
+	@include ease(.2s);
+	@include slide-up;
+}
+
+
+
+//cursour for typewriter
+.typed-cursor{
+	padding: 0 2px;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+
+
+// gradient
+.gradient-roll {
+	background: linear-gradient(270deg, #2e92ff, #6ed8ce, #d56ed8);
+	background-size: 600% 600%;
+	-webkit-animation: bganimate 30s ease infinite;
+	-moz-animation: bganimate 30s ease infinite;
+	animation: bganimate 30s ease infinite;
+	padding: 30px;
+	@include breakpoint(xm) {
+		padding: 15px;
+	}
+}
+.gradient-roll-reverse {
+	background: linear-gradient(270deg, #d56ed8, #dc65cf, #2e92ff);
+	background-size: 600% 600%;
+	-webkit-animation: bganimate 10s ease infinite;
+	-moz-animation: bganimate 10s ease infinite;
+	animation: bganimate 10s ease infinite;
+	padding: 30px;
+	@include breakpoint(xm) {
+		padding: 15px;
+	}
+}
+
+@-webkit-keyframes bganimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes bganimate {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bganimate { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+
+
+
+.static-gradient1 {
+	background: #2e92ff; /* Old browsers */
+	background: -moz-linear-gradient(left,  #2e92ff -80%, #6ed8ce 120%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #2e92ff -80%,#6ed8ce 120%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #2e92ff -80%,#6ed8ce 120%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e92ff', endColorstr='#6ed8ce',GradientType=1 ); /* IE6-9 */
+}
+.static-gradient2 {
+	background: #6ed8ce; /* Old browsers */
+	background: -moz-linear-gradient(left,  #6ed8ce -80%, #d56ed8 120%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #6ed8ce -80%,#d56ed8 120%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #6ed8ce -80%,#d56ed8 120%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ed8ce', endColorstr='#d56ed8',GradientType=1 ); /* IE6-9 */
+}
+.static-gradient3 {
+background: #d56ed8; /* Old browsers */
+background: -moz-linear-gradient(left,  #d56ed8 -80%, #2e92ff 120%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #d56ed8 -80%,#2e92ff 120%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #d56ed8 -80%,#2e92ff 120%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d56ed8', endColorstr='#2e92ff',GradientType=1 ); /* IE6-9 */
+}
+
+
+
+
+
+
+
+
+// slider // --------------------------------------------------
+
+
+
+.home-slider {
+	overflow: hidden;
+	//position: fixed;
+	//width: 100%;
+	//height: 600px;
+	//margin-top: 100px;
+	@include breakpoint(xs) {
+		//margin-top: 160px;
+	}
+	.item {
+		//display: block;
+		height: 600px;
+		@include breakpoint(xs) {
+			height: 300px;
+		}	
+	}
+	.callouts {
+		@include ease(.2s);
+		position: relative;
+		text-align: left;
+		color: white;
+		top: 20%;
+		//width: 80%;
+		margin: 0 auto;
+		h3 {
+			text-align: left;
+	    background-color: white;
+	    float: left;
+	    color: black;
+	    padding: 10px 25px;
+	    font-weight: 600;
+	    font-style: italic;
+		}
+		p {
+			float: left;
+			clear: both;
+			padding-left: 25px;
+		}
+	}
+	&:hover {
+		.slider-controls .left { margin-left: 0; }
+		.slider-controls .right { margin-right: 0; }
+	}
+}
+
+.play-pause {
+	position: absolute;
+	bottom: 15px; right: 15px;
+	z-index: 99;
+	@include breakpoint(xm) {
+		position: relative;
+		float: right;
+		margin: 5px;
+		right: 0;
+		bottom: 0;
+	}
+	#playButton, #pauseButton { display: inline-block; padding: 5px 15px;
+		background: rgba(0,0,0,.8);
+    color: #aaa;
+    &:hover { cursor: pointer; }
+    &.active { color: white; }
+	}		
+}
+
+
+
+/* Carousel Fading slide */
+.carousel-fade .carousel-inner { background: transparent; }
+.carousel-fade .carousel-control { z-index: 2; }  
+.carousel-fade .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  }
+
+  .carousel-fade .next.left,
+  .carousel-fade .prev.right,
+  .carousel-fade .item.active { opacity: 1; }
+
+  .carousel-fade .active.left,
+  .carousel-fade .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    }
+
+
+/* Safari Fix */
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+
+
+.quotes-wrap {
+	position: absolute;
+	top: 0;
+  right: 0;
+  text-align: right;
+  max-width: 500px;
+  margin: 12px 15px;
+	@include breakpoint(xs) {
+		bottom: 0;
+		top: inherit;
+	}
+}
+.quotes {
+	font-family: 'gothammediumregular';
+	color: white;
+  background: rgba(0,0,0,.7);
+  float: right;
+  clear: both;
+  position: relative;
+  padding: 8px 15px;
+	font-size: 11px;
+	line-height: 16px;
+	margin-top: 5px;
+	&.quote2 { max-width: 450px; }
+	@include breakpoint(xs) {
+		font-size: 8px;
+	}
+	em { color: #ddd; font-family: 'gothambookregular'; font-size: 10px; 
+		@include breakpoint(xs) {
+			font-size: 7px;
+		}
+	}
+}
+
+.slider-controls {
+	position: fixed;
+  top: 50%;
+  width: 100%;
+  height: 0;
+  margin-top: -45px;
+  z-index: 9999;
+  .left { float: left; margin-left: -60px; }
+  .right { float: right; margin-right: -60px;  }
+  .left, .right {
+  	@include ease(.2s);
+  	display: block;
+  	overflow: hidden;
+  	width: 50px; height: 50px;
+  	background: rgba(0,0,0,.5);
+  	&:hover .arrow { opacity: 1; }
+  }
+  .arrow {
+  	@include ease(.05s);
+  	position: relative;
+  	font-size: 32px;
+  	color: white;
+  	//padding: 20px;
+  	opacity: .5;
+  	position: relative;
+    top: 12px;
+    left: 15px;
+  }
+}
 
 
 
