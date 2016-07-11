@@ -1,9 +1,9 @@
 === WP Google Maps ===
-Contributors: WPGMaps
+Contributors: WPGMaps, NickDuncan, CodeCabin_, Jarryd Long
 Donate link: http://www.wpgmaps.com
-Tags: google maps, maps, map, map markers, google, google map, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget
+Tags: google maps, maps, map, map markers, google, google map, google maps plugin, wp maps, wp google maps, wp google map, easy map, store locator, map plugin, directions, map directions, google map plugin, routes, polygons, polylines, streetview, location, marker, latitude, longitude, map widget, map themes
 Requires at least: 3.5
-Tested up to: 4.3
+Tested up to: 4.5
 Stable tag: trunk
 License: GPLv2
 
@@ -18,11 +18,13 @@ While the free version of WP Google Maps allows you to create a Google map with 
 The [WP Google Maps Pro Version](http://www.wpgmaps.com/purchase-professional-version/) version allows you create custom Google maps with high quality markers containing locations, descriptions, images, categories, links and directions. 
 
 = Lite Version (Free) =
+* The most popular Google Maps plugin on WordPress
 * Super easy to use, no coding required!
 * Create as many map markers as you need by simply typing in the address
 * Responsive maps
 * Edit your map markers with the click of a button
-* 6 popular map themes to choose from
+* 9 popular map themes to choose from
+* Create or add your own map theme
 * Drag map markers to an exact location
 * Google Maps Streetview supported
 * UTF-8 character support
@@ -40,12 +42,11 @@ The [WP Google Maps Pro Version](http://www.wpgmaps.com/purchase-professional-ve
 * No advertising or links
 * Google Maps Autocomplete
 * Google Maps Transport Layer
-* Google Maps Weather Layer
 * Set the max zoom level for your map
 * Serve your map marker data via your database or an XML file
 * Compatible with caching plugins
 * Compatible with Cloudfare
-* Latest Google Maps API (V3.14, V3.15 & V3.exp)
+* Latest Google Maps API (V3.23, V3.24 & V3.exp)
 
 = Professional Edition =
 * Create multiple Google maps!
@@ -70,7 +71,7 @@ The [WP Google Maps Pro Version](http://www.wpgmaps.com/purchase-professional-ve
 * Multiple map widget functionality
 * Add retina-ready map marker icons
 * WordPress Network friendly
-* Get the [WP Google Maps Professional Edition](http://www.wpgmaps.com/purchase-professional-version/) for only $19.99
+* Get the [WP Google Maps Professional Edition](http://www.wpgmaps.com/purchase-professional-version/) for only $39.99
 
 
 = Translations =
@@ -93,9 +94,12 @@ Get a free copy of the WP Google Maps Pro version in exchange for translating ou
 * Portuguese (Jose Antonio Ribeiro)
 * Brazilian Portuguese (Roberto Costa)
 * Turkish (Suha Karalar)
+* Swedish (Martin Sleipner)
+* Bulgarian (Lyubomir Kolev)
+* Indonesian (Neno)
 * Lithuanian
 * Czechoslovakian^
-* Swedish^
+
 
 ^Language file needs to be updated
 
@@ -105,8 +109,6 @@ WP Google Maps Lite
 * [Basic Google Map with Markers](http://www.wpgmaps.com/demo/basic-google-map-with-markers/)
 * [Store Locator](http://www.wpgmaps.com/demo/wp-google-maps-store-locator-free-version/)
 * [Polygons & Polyines/Routes](http://www.wpgmaps.com/demo/polygons-and-polylines/)
-* [Google Maps Weather Layer](http://www.wpgmaps.com/demo/google-maps-weather-layer/)
-* [Google Maps Cloud Layer](http://www.wpgmaps.com/demo/google-maps-cloud-layer/)
 * [Google Maps Transit Layer](http://www.wpgmaps.com/demo/google-maps-transit-layer/)
 * [Google Maps Traffic Layer](http://www.wpgmaps.com/demo/google-maps-traffic-layer/)
 * [Google Maps Bicycle Layer](http://www.wpgmaps.com/demo/google-maps-bicycle-layer/)
@@ -156,7 +158,7 @@ In order to make use of WP Google Maps Store Locator functionality, simply click
 == Frequently Asked Questions ==
 
 = How do I get WP Google Maps Pro? =
-Simply visit http://www.wpgmaps.com and purchase the WP Google Maps Professional Edition for $19.99 once off. Free updates and support included forever.
+Simply visit http://www.wpgmaps.com and purchase the WP Google Maps Professional Edition for $39.99 once off. Free updates and support included forever.
 
 = I've installed the plugin, now what? =
 Once installed and activated, a link should appear in your left navigation panel within your WP-ADMIN section. Click on the "WP Google Maps" link and follow the on screen instructions.
@@ -186,6 +188,7 @@ Try [Nifty Maps](http://www.niftymaps.co) - Comprehensive Map Builder for all we
 12. WP Google Maps Lite version: Store Locator Settings
 13. WP Google Maps Lite version: Store Locator Map
 14. WP Google Maps Lite version: Map Widget
+15. Select a theme for your map, or choose a theme from our theme library
 
 
 == Upgrade Notice ==
@@ -203,6 +206,41 @@ We no longer support timthumb and we have opted to remove it from WP Google Maps
 Please upgrade your version of WP Google Maps to version 6.0.27 as it includes multiple security improvements.
 
 == Changelog ==
+
+= 6.3.09 - 2016-04-15 - High priority =
+* Deprecated google maps api 3.14 and 3.15, added 3.23 and 3.24
+
+= 6.3.08 - 2016-04-14 - Medium Priority =
+* Provides a workaround for users experiencing issues with their maps loading after updating to WordPress 4.5
+
+= 6.0.07 - 2016-04-13 - Low Priority =
+* Tested on WordPress 4.5
+* You can now use your own Google Maps API key for your maps
+
+= 6.3.06 - 2016-04-04 - Low priority =
+* Indonesian Translation added - Thank you Neno
+* Swedish Translation added - Thank you Martin Sleipner
+* Bulgarian Translation added - Thank you Lyubomir Kolev
+* Google Maps API sensor removed from API call 
+
+= 6.3.05 - 2016-01-14 - Low priority =
+* Multiple tab compatibility added
+
+= 6.3.04 - 2016-01-04 - Low priority =
+* Tested with WP 4.4
+
+= 6.3.03 - 2015-11-19 - Medium Priority =
+* Fixed a bug that caused the map to not display when a theme was not selected
+
+= 6.3.02 - 2015-11-06 - Low priority =
+* A new theme directory has been created - this allows you to use any map theme or style that you want simply by copying and pasting it's data
+
+= 6.3.01 - 2015-10-06 - Low priority =
+* Added 3 new google maps custom themes
+* Corrected internationalization
+* iPhone map marker styling fix
+* Fixed an autocomplete bug
+* All WP Google Maps language files have been updated
 
 = 6.3.0 - 2015-09-04 - Low priority =
 * Added 5 map themes to the map editor

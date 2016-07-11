@@ -3,9 +3,10 @@
  * plugin name: Default featured image
  * Plugin URI: http://wordpress.org/extend/plugins/default-featured-image/
  * Description: Allows users to select a default feartured image in the media settings
- * Version: 1.4
+ * Version: 1.6
  * Author: Jan Willem Oostendorp
  * License: GPLv2 or later
+ * Text Domain: default-featured-image
  */
 
 class default_featured_image
@@ -207,8 +208,12 @@ class default_featured_image
 		if (isset($attr['class']) ) {
 			$attr['class'] .= " default-featured-img";
 		} else {
+			$size_class = $size;
+			if ( is_array( $size_class )) {
+				$size_class = 'size-' . implode( 'x', $size_class);
+			}
 			//attachment-$size is a default class `wp_get_attachment_image` would otherwise add. It won't add it if there are classes already there
-			$attr['class'] = "attachment-{$size} default-featured-img";
+			$attr = array ('class' => "attachment-{$size_class} default-featured-img");
 		}
 
 		$html = wp_get_attachment_image( $default_thumbnail_id, $size, false, $attr );
