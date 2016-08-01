@@ -10,3 +10,7 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+
+
+php_flag  display_errors        on
+php_value error_reporting       2039
