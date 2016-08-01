@@ -84,7 +84,7 @@ conditionizr.config({
 		<a href="/"><h1 class="brand-txt">DIGITAL SAUNA.</h1></a>
 	</div> -->
 	<div class="logo">
-		<a href="/"><h1 class="brand-txt">DIGITAL SAUNA this isnt working for some reason. wtffff</h1></a>
+		<a href="/"><h1 class="brand-txt">DIGITAL SAUNA</h1></a>
 	</div>
 	<a href="#" class="menu-pullout-btn">
 		<!-- <div class="navigate-txt">Navigate.</div> -->
