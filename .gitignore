@@ -10,7 +10,6 @@ wp-content/blogs.dir/
 wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
-wp-content/plugins/
 wp-content/wp-cache-config.php
 wp-admin/
 wp-includes/
