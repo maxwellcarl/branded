@@ -163,10 +163,11 @@ body.menu-pullout-active #wrapper {
 
 
 .parallax-window {
-	min-height: 600px;
+	min-height: 700px;
 	background: transparent;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: -100px;
 }
 
 

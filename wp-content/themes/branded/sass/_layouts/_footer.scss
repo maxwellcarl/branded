@@ -18,7 +18,7 @@
 	opacity: .2;
 	@include ease(.2s);
 	margin: 0 20px;
-	max-width: 120px;
+	//max-width: 120px;
 	@include breakpoint(xm) {
 		margin: 20px 0;
 		width: 100%;
@@ -38,6 +38,9 @@
 	background: #111;
 	padding: 100px 0;
 	color: white;
+	h6 {
+		@include breakpoint(xm) { font-size: .6em; }
+	}
 }
 
 

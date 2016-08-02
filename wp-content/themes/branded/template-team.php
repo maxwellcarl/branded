@@ -7,7 +7,7 @@ get_header(); ?>
 	<h1 class="page-title">Collaborators</h1>
 </div>
 
-<section class="content-block" style="padding: 0;">
+<section class="content-block" style="padding: 100px 0 0;">
 	<p class="page-desc"><strong>MEET OUR COLLABORATORS</strong><br><br>We are a collection of freelance consultants, designers, web developers and marketing experts.<br>We elevate brands and take ideas to the next level.</p>
 
 	<div class="team-members cf" style="padding: 30px 0 90px;">

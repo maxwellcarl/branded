@@ -181,12 +181,15 @@ get_header(); ?>
 
 
 
+
 <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/img/saunadark.jpg">
 	<div class="home-parallax-window-txt waypoint">
-		<h6>Relax...</h6>
-		<h1 style="font-family: didot; font-weight: 100;">Let us sweat for you</h1>
+		<h6>Relax</h6>
+		<h1 style="font-family: didot; font-weight: 100;">Let us sweat for you...</h1>
 	</div>
 </div>
+
+
 
 
 <!--
