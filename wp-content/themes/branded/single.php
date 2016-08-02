@@ -7,8 +7,8 @@
 		<article class="post-single" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<div class="post-data-bar">
-				<div class="container">
-					<?php if( get_field('cplete_date') ): ?>
+
+					<?php if( get_field('complete_date') ): ?>
 					<div class="col-md-3">
 						<h6>Date: <?php the_field('complete_date', false, false); ?></h6>
 					</div>
@@ -24,7 +24,7 @@
 					</div>
 					<?php endif; ?>
 				</div>
-			</div>
+
 			<div class="post-content col-md-6 col-md-offset-3" style="padding: 60px 0 100px 0;">
 				<h1 style="font-family: 'Futura Std'; font-weight: 100;"><?php the_title(); ?></h1>
 				<?php the_content(); ?>
