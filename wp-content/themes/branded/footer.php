@@ -10,9 +10,7 @@
 			<h6 style="letter-spacing: 4px; opacity: .4; margin-top: 20px; margin-bottom:0;">the Digital Sauna</h6>
 			<p style="font-size: 9px; opacity: .4; letter-spacing: 1px;"><em>- Your Creative Hotbox -</em></p>
 
-			<!--<div class="smokes">
-				<div class="smoke smoke1"></div>
-			</div>-->
+
 			<a href="/" class="footer-branding"><div class="cube cube-footer">
 			  <div class="top"></div>
 			  <div class="right"></div>
@@ -68,6 +66,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/lib/date.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/lib/jquery.appear.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/lib/typed.js"></script>
+
 <?php wp_footer(); ?>
 
 

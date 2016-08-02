@@ -126,8 +126,10 @@ get_header(); ?>
 					?>
 					<div class="col-sm-6 col-md-4 col-lg-4 homepage-services-item waypoint">
 						<a href="<?php echo $link; ?>">
-						<div class="img-wrap" style="background: url('<?php echo $img; ?>') no-repeat center center; background-size: 50%;"></div>
-						<h4 style="margin-top: 60px; color: black; letter-spacing: 1px;"><?php echo $title; ?></h4>
+						<div class="img-wrap">
+							<div class="interior-img" style="background: url('<?php echo $img; ?>') no-repeat center center; background-size: 50%;"></div>
+						</div>
+						<h4><?php echo $title; ?></h4>
 						<p><?php echo $txt; ?></p>
 						</a>
 					</div>
@@ -135,7 +137,7 @@ get_header(); ?>
 			<?php endif; ?>
 		</div>
 
-		<div class="services-callouts cf" style="padding: 60px 0;">
+		<div class="services-callouts cf" style="padding: 30px 0;">
 			<div class="col-md-4">
 				<p class="waypoint up">Ecommerce Sites</p>
 				<p class="waypoint up">Custom Wordpress / Shopify Development</p>
@@ -171,8 +173,7 @@ get_header(); ?>
 		</div>
 
 
-		<a class="our-work-btn cf" href="/services"><h4>Our Services <i class="fa fa-angle-right" aria-hidden="true"></i></h4></a>
-
+		<p style="padding: 90px 0 60px; text-align: center;">Email us for more information or get a project quoted: <br><br><a href="mailto:info@digitalsauna.com" target="_blank" class="big-email">info@digitalsauna.com</a></p>
 
 
 	</div>
@@ -204,6 +205,7 @@ get_header(); ?>
 <p style="font-size: 10px; color: white; margin-top: -30px; margin-left: 5px; z-index: 2; position: relative;"><em>Aerial View of Greenlands Ice Sheets Melting into an Underground Channel</em></p>
 
 -->
+
 
 <section class="sub-footer cf someselector">
 	<div class="container">

@@ -12,17 +12,17 @@
 	overflow: hidden;
 	position: relative;
 	background: rgba(0,0,0,.2);
-	.page-title {
-		position: absolute;
-		@include vertical-align;
-		position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    width: 100%;
-    text-align: center;
-    font-size: 48px;
-	}
+	// .page-title {
+	// 	position: absolute;
+	// 	@include vertical-align;
+	// 	position: absolute;
+ //    top: 50%;
+ //    transform: translateY(-50%);
+ //    color: white;
+ //    width: 100%;
+ //    text-align: center;
+ //    font-size: 48px;
+	// }
 }
 
 #main-content {
@@ -49,6 +49,9 @@ h1.page-title {
   letter-spacing: 1px;
   @include ease(2s);
   left: -2000px;
+  @include breakpoint(xm) {
+		display: none;
+	}
 }
 body.ready h1.page-title {
 	left: 90px;
@@ -212,6 +215,12 @@ body.ready h1.page-title {
 
 .homepage-services {
 	padding: 60px 0 0;
+	p { color: #222; }
+	h4 {
+		font-family: 'Futura Std';
+		margin-top: 60px; 
+		color: black;
+	}
 }
 .homepage-services-item {
 	font-family: 'Futura Std';
@@ -229,13 +238,16 @@ body.ready h1.page-title {
 		top: 0;
 	}
 	.img-wrap {
-		border: 1px solid #ddd;
+		background: $mint;
+		//border: 1px solid #111;
 		border-radius: 100%;
+		display: block;
+		&:hover { opacity: 1; }
+	}
+	.interior-img {
 		width: 260px;
 		height: 260px;
-		display: block;
 		margin: 0 auto;
-		&:hover { opacity: 1; }
 	}
 	@include breakpoint(xm) { 
 		margin-bottom: 60px;
@@ -274,8 +286,11 @@ body.ready h1.page-title {
 	letter-spacing: 2px;
 	position: relative;
 	color: black;
-
 	@include ease(.4s);
+	&:hover {
+		border: 1px solid $accent1;
+		color: $accent1;
+	}
 	//top: 20px;
 	// opacity: 0;
 	// visibility: hidden;
@@ -628,6 +643,17 @@ a.read-more { display: inline-block; }
 	}
 }
 
+
+
+.big-email {
+	border-bottom: 1px solid #eee; 
+	font-size: 32px; 
+	padding:20px 0; 
+	font-weight: 600; color: #222;
+	&:hover {
+		color: $accent1;
+	}
+}
 
 
 

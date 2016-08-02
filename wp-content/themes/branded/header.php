@@ -22,6 +22,7 @@
 
 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
+
 <?php wp_head(); ?>
 
 
@@ -117,9 +118,19 @@ conditionizr.config({
 <? elseif ( is_home() ): ?><!-- blog page (news) -->
 
 
-<? elseif ( is_single() ): ?><!-- single blog page (news) -->
+<? elseif ( is_single() ): ?>
 
 
+<?php
+  $thumb_id = get_post_thumbnail_id();
+  $thumb_url = wp_get_attachment_image_src($thumb_id,'full', true);
+  ?>
+<div class="banner">
+	<img src="<?php echo $thumb_url[0]; ?>" class="page-banner-img">
+	<div class="page-title">
+		<h2><?php the_title(); ?></h2>
+	</div>
+</div>
 
 <? else: ?><!-- all pages -->
 

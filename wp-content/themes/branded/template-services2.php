@@ -10,7 +10,8 @@ get_header(); ?>
 	<div class="folding-bar-1">
 		<div class="folding-bar-2">
 			<div class="folding-bar-3">
-				A few of the Services we offer
+				<div class="bar-title1 hidden-xs">A few of the Services we offer</div>
+				<div class="bar-title2 visible-xs">Our Services:</div>
 			</div>
 		</div>
 	</div>
@@ -19,7 +20,7 @@ get_header(); ?>
 <!-- <div class="gradient-roll parallax-window" data-parallax="scroll" style="position:relative;"> -->
 
 
-	<div class="cube cube-footer" style="top: 100px; opacity: .6;">
+	<div class="cube cube-home">
 	  <div class="top"></div>
 	  <div class="right"></div>
 	  <div class="bottom"></div>
@@ -75,7 +76,7 @@ get_header(); ?>
 			</div>
 		</div>
 
-		<p style="padding: 60px 0 0;"><a href="mailto:info@digitalsauna.com" target="_blank" style="border-bottom: 1px solid #eee;">info@digitalsauna.com</a></p>
+		<p style="padding: 120px 0 60px;"><a href="mailto:info@digitalsauna.com" target="_blank" class="big-email">info@digitalsauna.com</a></p>
 
 	</div>
 </section>

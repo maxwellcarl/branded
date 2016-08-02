@@ -349,11 +349,21 @@ body.ready .type-wrap {
 body.scrolled .folding-bar-1 {
 	height: 0;
 	transform: rotateX(-90deg);
+	@include breakpoint(xm) {
+		height: 80px;
+		transform: rotateX(0deg);
+	}
 }
 body.scrolled .folding-bar-3 {
 	height: 0;
 	transform: rotateX(-90deg);
+	@include breakpoint(xm) {
+		height: 80px;
+		transform: rotateX(0deg);
+	}
 }
+
+
 
 
 #mouse-icon{
@@ -512,6 +522,7 @@ body.ready .menu-pullout-btn {
 	padding: 60px 0;
 	@include breakpoint(xm) {
 		width: 100vw;
+		left: -100vw;
 	}
 }
 body.menu-pullout-active .menu-pullout {
