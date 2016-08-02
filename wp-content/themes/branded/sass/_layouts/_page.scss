@@ -449,6 +449,7 @@ body.ready h1.page-title {
 	position: relative;
 	height: 80px;
 	line-height: 80px;
+	border-bottom: 1px solid #eee;
 }
 
 
@@ -698,6 +699,7 @@ a.read-more { display: inline-block; }
 }
 
 .contact-content {
+	background: white;
 	position: relative;
 	display: block;
 	padding: 100px 0;

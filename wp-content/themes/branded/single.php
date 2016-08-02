@@ -20,7 +20,7 @@
 					<?php endif; ?>
 					<?php if( get_field('viewsite') ): ?>
 					<div class="col-md-3">
-						<h6><?php the_field('viewsite', false, false); ?></h6>
+						<h6 style="color: #9AE2CA;"><?php the_field('viewsite', false, false); ?></h6>
 					</div>
 					<?php endif; ?>
 				</div>

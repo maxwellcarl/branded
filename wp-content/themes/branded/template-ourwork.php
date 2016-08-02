@@ -3,7 +3,7 @@
 get_header(); ?>
 
 
-<div class="parallax-window services-parallax" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/img/bg-screen.jpg">
+<div class="parallax-window services-parallax" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/img/yup.jpg">
 </div>
 	
 	<h1 class="page-title">Our Work</h1>

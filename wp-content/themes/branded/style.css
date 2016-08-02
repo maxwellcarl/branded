@@ -2586,65 +2586,66 @@ body.ready h1.page-title {
   position: relative;
   height: 80px;
   line-height: 80px;
+  border-bottom: 1px solid #eee;
 }
 
-/* line 460, sass/_layouts/_page.scss */
+/* line 461, sass/_layouts/_page.scss */
 .content-block.blog {
   width: 100%;
 }
 
-/* line 463, sass/_layouts/_page.scss */
+/* line 464, sass/_layouts/_page.scss */
 .news-post {
   padding: 0 0 20px 0;
   margin: 0 0 60px 0;
   border-bottom: 1px solid #eee;
 }
-/* line 467, sass/_layouts/_page.scss */
+/* line 468, sass/_layouts/_page.scss */
 .news-post .meta {
   margin: 0 0 20px 0;
 }
 
-/* line 469, sass/_layouts/_page.scss */
+/* line 470, sass/_layouts/_page.scss */
 .news-post-img {
   display: block;
   width: 100%;
   height: auto;
 }
-/* line 473, sass/_layouts/_page.scss */
+/* line 474, sass/_layouts/_page.scss */
 .news-post-img img {
   width: 100%;
   height: auto;
 }
 
-/* line 475, sass/_layouts/_page.scss */
+/* line 476, sass/_layouts/_page.scss */
 h3.news-post-title {
   padding: 10px 0;
   margin-bottom: 0;
 }
-/* line 478, sass/_layouts/_page.scss */
+/* line 479, sass/_layouts/_page.scss */
 h3.news-post-title a {
   color: #222;
 }
 
-/* line 481, sass/_layouts/_page.scss */
+/* line 482, sass/_layouts/_page.scss */
 a.read-more-wrap {
   display: block;
   width: 100%;
 }
 
-/* line 482, sass/_layouts/_page.scss */
+/* line 483, sass/_layouts/_page.scss */
 a.read-more {
   display: inline-block;
 }
 
-/* line 485, sass/_layouts/_page.scss */
+/* line 486, sass/_layouts/_page.scss */
 .sidebar-wrap {
   position: absolute;
   height: 100%;
   right: 0;
 }
 
-/* line 490, sass/_layouts/_page.scss */
+/* line 491, sass/_layouts/_page.scss */
 .sidebar {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -2654,45 +2655,45 @@ a.read-more {
   top: 0;
   min-width: 200px;
 }
-/* line 495, sass/_layouts/_page.scss */
+/* line 496, sass/_layouts/_page.scss */
 .sidebar.sticky {
   position: fixed;
   top: 15%;
 }
-/* line 502, sass/_layouts/_page.scss */
+/* line 503, sass/_layouts/_page.scss */
 .sidebar h3 {
   margin-bottom: .5em;
 }
-/* line 505, sass/_layouts/_page.scss */
+/* line 506, sass/_layouts/_page.scss */
 .sidebar ul {
   margin: 0;
   padding: 0;
 }
-/* line 506, sass/_layouts/_page.scss */
+/* line 507, sass/_layouts/_page.scss */
 .sidebar ul > li {
   list-style-type: none;
   font-size: 14px;
   line-height: 22px;
 }
 
-/* line 512, sass/_layouts/_page.scss */
+/* line 513, sass/_layouts/_page.scss */
 #recent-posts-2 {
   margin-bottom: 30px;
 }
 
-/* line 515, sass/_layouts/_page.scss */
+/* line 516, sass/_layouts/_page.scss */
 .sidebar .search input {
   height: 20px;
   line-height: 20px;
   padding-right: 0;
 }
 
-/* line 520, sass/_layouts/_page.scss */
+/* line 521, sass/_layouts/_page.scss */
 .search:hover button {
   color: #222;
 }
 
-/* line 521, sass/_layouts/_page.scss */
+/* line 522, sass/_layouts/_page.scss */
 .search button {
   -webkit-appearance: none;
   background: transparent;
@@ -2705,12 +2706,12 @@ a.read-more {
   color: #ccc;
 }
 
-/* line 532, sass/_layouts/_page.scss */
+/* line 533, sass/_layouts/_page.scss */
 #tag_cloud-2 {
   padding-bottom: 20px;
 }
 
-/* line 535, sass/_layouts/_page.scss */
+/* line 536, sass/_layouts/_page.scss */
 .sidebar-book {
   width: 100%;
   display: block;
@@ -2718,7 +2719,7 @@ a.read-more {
   margin-top: 10px;
   border-top: 1px solid #eee;
 }
-/* line 541, sass/_layouts/_page.scss */
+/* line 542, sass/_layouts/_page.scss */
 .sidebar-book .sidebar-btn {
   display: inline-block;
   font-size: 11px;
@@ -2728,29 +2729,29 @@ a.read-more {
   line-height: 36px;
 }
 
-/* line 553, sass/_layouts/_page.scss */
+/* line 554, sass/_layouts/_page.scss */
 .single h1 {
   margin-bottom: 10px;
 }
 
-/* line 556, sass/_layouts/_page.scss */
+/* line 557, sass/_layouts/_page.scss */
 .single .meta {
   margin-bottom: 10px;
 }
 
-/* line 562, sass/_layouts/_page.scss */
+/* line 563, sass/_layouts/_page.scss */
 .mailchimp.sidebar {
   margin-top: 0px;
   position: relative;
   display: block;
 }
-/* line 566, sass/_layouts/_page.scss */
+/* line 567, sass/_layouts/_page.scss */
 .mailchimp.sidebar input {
   color: #222;
   background-color: #eee;
   border: 0;
 }
-/* line 571, sass/_layouts/_page.scss */
+/* line 572, sass/_layouts/_page.scss */
 .mailchimp.sidebar input[type="submit"] {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -2763,30 +2764,30 @@ a.read-more {
   top: -15px;
   color: #222;
 }
-/* line 579, sass/_layouts/_page.scss */
+/* line 580, sass/_layouts/_page.scss */
 .mailchimp.sidebar input[type="submit"]:hover {
   background: #9ae2ca;
 }
 
-/* line 593, sass/_layouts/_page.scss */
+/* line 594, sass/_layouts/_page.scss */
 .team-members {
   text-align: center;
   position: relative;
   display: block;
 }
-/* line 596, sass/_layouts/_page.scss */
+/* line 597, sass/_layouts/_page.scss */
 .team-members h4 {
   letter-spacing: 2px;
 }
-/* line 599, sass/_layouts/_page.scss */
+/* line 600, sass/_layouts/_page.scss */
 .team-members .team-member {
   padding-bottom: 60px;
 }
-/* line 601, sass/_layouts/_page.scss */
+/* line 602, sass/_layouts/_page.scss */
 .team-members .team-member:nth-of-type(3n+1) {
   clear: both;
 }
-/* line 603, sass/_layouts/_page.scss */
+/* line 604, sass/_layouts/_page.scss */
 .team-members .img-wrap {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -2808,20 +2809,20 @@ a.read-more {
   /* IE6-9 */
   -webkit-filter: grayscale(100%);
 }
-/* line 616, sass/_layouts/_page.scss */
+/* line 617, sass/_layouts/_page.scss */
 .team-members p {
   text-align: left;
   font-size: 14px;
   margin-top: 20px;
 }
 
-/* line 634, sass/_layouts/_page.scss */
+/* line 635, sass/_layouts/_page.scss */
 .services-parallax {
   background: rgba(0, 0, 0, 0.4);
   height: 50vh;
 }
 
-/* line 640, sass/_layouts/_page.scss */
+/* line 641, sass/_layouts/_page.scss */
 .services-callouts h1 {
   font-family: 'Futura Std';
   font-weight: 100;
@@ -2829,7 +2830,7 @@ a.read-more {
   font-size: 22px;
   padding: 30px 0;
 }
-/* line 647, sass/_layouts/_page.scss */
+/* line 648, sass/_layouts/_page.scss */
 .services-callouts p {
   font-family: 'Proxima';
   font-weight: 600;
@@ -2840,7 +2841,7 @@ a.read-more {
   letter-spacing: .2px;
   font-style: italic;
 }
-/* line 656, sass/_layouts/_page.scss */
+/* line 657, sass/_layouts/_page.scss */
 .services-callouts p::after {
   content: '';
   width: 60px;
@@ -2848,24 +2849,24 @@ a.read-more {
   display: block;
   margin: 20px auto 0;
 }
-/* line 663, sass/_layouts/_page.scss */
+/* line 664, sass/_layouts/_page.scss */
 .services-callouts p:last-child:after {
   display: none;
 }
-/* line 667, sass/_layouts/_page.scss */
+/* line 668, sass/_layouts/_page.scss */
 .services-callouts .waypoint.up {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 671, sass/_layouts/_page.scss */
+/* line 672, sass/_layouts/_page.scss */
 .services-callouts .waypoint.up.visible {
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-/* line 681, sass/_layouts/_page.scss */
+/* line 682, sass/_layouts/_page.scss */
 .big-email {
   border-bottom: 1px solid #eee;
   font-size: 32px;
@@ -2873,25 +2874,26 @@ a.read-more {
   font-weight: 600;
   color: #222;
 }
-/* line 686, sass/_layouts/_page.scss */
+/* line 687, sass/_layouts/_page.scss */
 .big-email:hover {
   color: #9ae2ca;
 }
 
-/* line 695, sass/_layouts/_page.scss */
+/* line 696, sass/_layouts/_page.scss */
 .contact-parallax {
   background: rgba(0, 0, 0, 0.6);
   min-height: 400px;
 }
 
-/* line 700, sass/_layouts/_page.scss */
+/* line 701, sass/_layouts/_page.scss */
 .contact-content {
+  background: white;
   position: relative;
   display: block;
   padding: 100px 0;
 }
 
-/* line 706, sass/_layouts/_page.scss */
+/* line 708, sass/_layouts/_page.scss */
 .contact-form input, .contact-form textarea {
   width: 100%;
   padding: 12px 15px;
@@ -2905,12 +2907,12 @@ a.read-more {
   transition: all 0.4s ease-in-out;
 }
 
-/* line 715, sass/_layouts/_page.scss */
+/* line 717, sass/_layouts/_page.scss */
 .contact-form input:focus {
   border: 1px solid #222;
 }
 
-/* line 718, sass/_layouts/_page.scss */
+/* line 720, sass/_layouts/_page.scss */
 .contact-form input[type="submit"] {
   color: black;
   background: #eee;
